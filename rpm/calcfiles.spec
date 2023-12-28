@@ -15,11 +15,11 @@ calc_files.sh is a simple script that calculates the number of files in a direct
 
 %prep
 unzip %SOURCE0
-cd os-main/
+cd System-Programming-main/
 
 %install
 mkdir -p %{buildroot}/usr/bin
-install -m 755 %{_builddir}/os-main/calc_files.sh %{buildroot}/usr/bin/calc_files
+install -m 755 %{_builddir}/System-Programming-main/calc_files.sh %{buildroot}/usr/bin/calc_files
 
 %files
 /usr/bin/calc_files
